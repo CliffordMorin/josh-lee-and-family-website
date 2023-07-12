@@ -69,32 +69,61 @@ const NavTabsDesktop = () => {
                   open={Boolean(aboutMenuOpen)}
                   onClose={handleAboutMenuClose}
                 >
-                  {item.children.map((childItem) => (
-                    <Link
-                      to={childItem.link}
-                      style={{
-                        textDecoration: "none",
-                        color: "unset",
-                        display: "block",
-                      }}
-                      key={childItem.id}
-                    >
-                      <MenuItem
-                        onClick={handleAboutMenuClose}
-                        className={classes.navLinkTextDesktop}
+                  {item.children.map((childItem) =>
+                    childItem.page === "THE BAND" ? (
+                      <a
+                        href={childItem.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          textDecoration: "none",
+                          color: "unset",
+                          display: "block",
+                        }}
+                        key={childItem.id}
                       >
-                        <childItem.icon
-                          className={classes.IconsDesktopDropdown}
-                        />
-                        <Typography
-                          className={classes.navLinkTextDropdownDesktop}
-                          variant="h1"
+                        <MenuItem
+                          onClick={handleAboutMenuClose}
+                          className={classes.navLinkTextDesktop}
                         >
-                          {childItem.page}
-                        </Typography>
-                      </MenuItem>
-                    </Link>
-                  ))}
+                          <childItem.icon
+                            className={classes.IconsDesktopDropdown}
+                          />
+                          <Typography
+                            className={classes.navLinkTextDropdownDesktop}
+                            variant="h1"
+                          >
+                            {childItem.page}
+                          </Typography>
+                        </MenuItem>
+                      </a>
+                    ) : (
+                      <Link
+                        to={childItem.link}
+                        style={{
+                          textDecoration: "none",
+                          color: "unset",
+                          display: "block",
+                        }}
+                        key={childItem.id}
+                      >
+                        <MenuItem
+                          onClick={handleAboutMenuClose}
+                          className={classes.navLinkTextDesktop}
+                        >
+                          <childItem.icon
+                            className={classes.IconsDesktopDropdown}
+                          />
+                          <Typography
+                            className={classes.navLinkTextDropdownDesktop}
+                            variant="h1"
+                          >
+                            {childItem.page}
+                          </Typography>
+                        </MenuItem>
+                      </Link>
+                    )
+                  )}
                 </Menu>
               )}
               {item.page === "Media" && (

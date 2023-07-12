@@ -30,7 +30,7 @@ const ErrorPage = ({ error }) => {
             sx={{ mb: 2, textAlign: "center", color: "text.colorful" }}
           >
             There was an error loading the shows, reload the page to try again.
-            If the problem persists, please contact me or my website developer.
+            If the problem persists, please contact us or my website developer.
           </Typography>
           <Link
             href="mailto:cliffthedev@gmail.com?subject=Joan%20Fort%20Calendar%20Error"

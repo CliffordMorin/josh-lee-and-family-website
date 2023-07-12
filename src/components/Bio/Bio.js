@@ -86,7 +86,7 @@ const Bio = () => {
               />
             </Grid>
             <Grid item xs={12} md={6} sx={{ zIndex: 1 }}>
-              <Box sx={{ display: "flex", justifyContent: "space-evenly" }}>
+              {/* <Box sx={{ display: "flex", justifyContent: "space-evenly" }}>
                 <Button
                   value="en"
                   onClick={handleLanguage}
@@ -108,7 +108,7 @@ const Bio = () => {
                 >
                   Catalan
                 </Button>
-              </Box>
+              </Box> */}
               <Typography
                 variant="body2"
                 align="center"
@@ -145,54 +145,6 @@ const Bio = () => {
                   : language === "ca"
                   ? ca?.bio3
                   : es?.bio3}
-              </Typography>
-              <Typography
-                variant="body2"
-                align="center"
-                className={classes.text}
-                p={2}
-              >
-                {language === "en"
-                  ? en?.bio4
-                  : language === "ca"
-                  ? ca?.bio4
-                  : es?.bio4}
-              </Typography>
-              <Typography
-                variant="body2"
-                align="center"
-                className={classes.text}
-                p={2}
-              >
-                {language === "en"
-                  ? en?.bio5
-                  : language === "ca"
-                  ? ca?.bio5
-                  : es?.bio5}
-              </Typography>
-              <Typography
-                variant="body2"
-                align="center"
-                className={classes.text}
-                p={2}
-              >
-                {language === "en"
-                  ? en?.bio6
-                  : language === "ca"
-                  ? ca?.bio6
-                  : es?.bio6}
-              </Typography>
-              <Typography
-                variant="body2"
-                align="center"
-                className={classes.text}
-                p={2}
-              >
-                {language === "en"
-                  ? en?.bio7
-                  : language === "ca"
-                  ? ca?.bio7
-                  : es?.bio7}
               </Typography>
             </Grid>
           </Grid>

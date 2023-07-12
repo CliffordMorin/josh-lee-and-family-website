@@ -47,7 +47,7 @@ const CalendarV2 = () => {
     try {
       setLoading(true);
       const response = await fetch(
-        `https://rest.bandsintown.com/v3.1/artists/joan%20fort/events?app_id=${API_KEY}&date=${selectedDate}`
+        `https://rest.bandsintown.com/v3.1/artists/josh%20lee%20and%20the%20family/events?app_id=${API_KEY}&date=${selectedDate}`
       );
       const data = await response.json();
       if (selectedDate === "past") {

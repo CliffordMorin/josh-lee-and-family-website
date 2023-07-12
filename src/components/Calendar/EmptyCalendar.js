@@ -38,7 +38,7 @@ const EmptyCalendar = () => {
           </Typography>
           <Typography variant="h6" color="text.colorful">
             There are currently shows scheduled. Please check back later! Or you
-            can track Joan on Bandsintown to get notified when new shows are
+            can track us on Bandsintown to get notified when new shows are
             announced.
           </Typography>
           <Grid item xs={12} sx={{ display: "flex", justifyContent: "center" }}>
