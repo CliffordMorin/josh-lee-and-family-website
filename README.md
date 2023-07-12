@@ -47,8 +47,8 @@ As a professional musician I want to view a slick, mobile first musician website
 
 ## Links
 
-- Netlify demo site link: (https://www.joanfort.com)
-- Github Repository URL: (https://github.com/CliffordMorin/Joan-Fort-Website)
+- Netlify demo site link: (https://www.joshleeandthefamily.com)
+- Github Repository URL: (https://github.com/CliffordMorin/josh-lee-and-family-website)
 
 ## Technologies Used
 

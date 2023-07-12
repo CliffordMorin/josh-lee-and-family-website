@@ -18,7 +18,7 @@ import LoadingPage from "./LoadingPage";
 import ErrorPage from "./ErrorPage";
 
 const API_KEY = process.env.REACT_APP_BANDSINTOWN_API_KEY;
-const ARTIST_ID = "15520741";
+const ARTIST_ID = "14237269";
 
 const CalendarV2 = () => {
   const theme = useTheme();
