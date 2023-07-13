@@ -52,7 +52,7 @@ const Home = () => {
         <meta name="description" content="Home Page" />
         <link rel="canonical" href="/" />
       </Helmet>
-      <Snackbar
+      {/* <Snackbar
         open={open}
         onClose={handleClose}
         TransitionComponent={TransitionDown}
@@ -85,7 +85,7 @@ const Home = () => {
           </a>{" "}
           out now! Click to listen!{" "}
         </Alert>
-      </Snackbar>
+      </Snackbar> */}
       {/* <Container
         className={classes.textContainer}
         sx={{

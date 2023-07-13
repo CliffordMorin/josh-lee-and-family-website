@@ -5,6 +5,7 @@ import { BsFillCameraFill, BsCalendarEventFill } from "react-icons/bs";
 import { AiFillPicture, AiFillMail } from "react-icons/ai";
 import { HiUserGroup } from "react-icons/hi";
 import { GrDocumentDownload } from "react-icons/gr";
+import { ImHeadphones } from "react-icons/im";
 import { v4 as uuidv4 } from "uuid";
 
 const navLinksDesktop = [
@@ -15,12 +16,12 @@ const navLinksDesktop = [
     icon: FaInfoCircle,
     children: [
       { page: "BIO", link: "/bio", id: uuidv4(), icon: TfiWrite },
-      {
-        page: "DISCOGRAPHY",
-        link: "/discography",
-        id: uuidv4(),
-        icon: TbVinyl,
-      },
+      // {
+      //   page: "DISCOGRAPHY",
+      //   link: "/discography",
+      //   id: uuidv4(),
+      //   icon: TbVinyl,
+      // },
       {
         page: "THE FAMILY",
         link: "https://drive.google.com/file/d/11-YSXUvYmNAdqN3qBWu6vbRvMazxmzcn/view",
@@ -34,7 +35,7 @@ const navLinksDesktop = [
     id: uuidv4(),
     icon: BsFillCameraFill,
     children: [
-      { page: "VIDEOS", link: "/videos", id: uuidv4(), icon: FaVideo },
+      // { page: "VIDEOS", link: "/videos", id: uuidv4(), icon: FaVideo },
       {
         page: "PICTURES",
         link: "/pictures",
@@ -42,10 +43,10 @@ const navLinksDesktop = [
         icon: AiFillPicture,
       },
       {
-        page: "EPK",
-        link: "https://acrobat.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Aaa557c3a-3b8c-3b52-b294-f9c70aaa92d1&viewer%21megaVerb=group-discover",
+        page: "RECORDINGS",
+        link: "https://drive.google.com/drive/folders/19uEMozTc4QDnKB9N3b7fM50tOVZCFBqF",
         id: uuidv4(),
-        icon: GrDocumentDownload,
+        icon: ImHeadphones,
       },
     ],
   },
