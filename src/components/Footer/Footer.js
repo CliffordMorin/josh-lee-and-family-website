@@ -22,7 +22,7 @@ const Footer = () => {
           >
             <Box mb={1} pt={2}>
               <a
-                href="https://www.instagram.com/joanfort_/"
+                href="https://www.instagram.com/joshleeandthefamily/"
                 target="_blank"
                 rel="noreferrer"
                 style={{ color: "#ffffff" }}
@@ -35,7 +35,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://www.youtube.com/@joanfortmusic"
+                href="https://www.youtube.com/channel/UCp3ZsagJAUM_T1O_OAEGBbA"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -47,7 +47,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://www.facebook.com/JoanFortN"
+                href="https://www.facebook.com/groups/1676540489272052/user/1468826780/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -71,7 +71,10 @@ const Footer = () => {
               </a> */}
             </Box>
             <Box>
-              <Typography variant="h9" sx={{ fontSize: "10px" }}>
+              <Typography
+                variant="h9"
+                sx={{ fontSize: "10px", color: "#FFFFFF" }}
+              >
                 Made with <Favorite fontSize="10px" color="error" /> by{" "}
                 <a
                   href="https://cliffordmorin.dev"

@@ -74,10 +74,10 @@ const CalendarV2 = () => {
   return (
     <div>
       <Helmet>
-        <title>Joan Fort | Calendar</title>
+        <title>Josh Lee and the Family | Calendar</title>
         <meta
           name="description"
-          content="Joan Fort Calendar with dates of upcoming shows, concerts and public events."
+          content="Josh Lee and the Family Calendar with dates of upcoming shows, concerts and public events."
         />
         <link rel="canonical" href="/calendar" />
       </Helmet>

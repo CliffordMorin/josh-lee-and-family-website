@@ -48,8 +48,8 @@ const Home = () => {
       maxWidth={isSmallScreen ? "sm" : "xl"}
     >
       <Helmet>
-        <title>Joan Fort | Home</title>
-        <meta name="description" content="Joan Fort's Home Page" />
+        <title>Josh Lee and the Family | Home</title>
+        <meta name="description" content="Home Page" />
         <link rel="canonical" href="/" />
       </Helmet>
       <Snackbar
@@ -86,7 +86,7 @@ const Home = () => {
           out now! Click to listen!{" "}
         </Alert>
       </Snackbar>
-      <Container
+      {/* <Container
         className={classes.textContainer}
         sx={{
           [theme.breakpoints.down("sm")]: {
@@ -125,8 +125,8 @@ const Home = () => {
               FORT
             </Typography>
           </Typography>
-        </Fade>
-        {/* <Fade delay="100">
+        </Fade> */}
+      {/* <Fade delay="100">
           <Typography variant="h5" sx={{ color: theme.palette.text.light }}>
             Guitarist, Composer & Educator
           </Typography>
@@ -150,7 +150,7 @@ const Home = () => {
             Out Now!
           </Typography>
         </Fade> */}
-      </Container>
+      {/* </Container> */}
     </Container>
   );
 };

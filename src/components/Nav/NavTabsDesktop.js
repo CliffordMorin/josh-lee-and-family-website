@@ -70,7 +70,7 @@ const NavTabsDesktop = () => {
                   onClose={handleAboutMenuClose}
                 >
                   {item.children.map((childItem) =>
-                    childItem.page === "THE BAND" ? (
+                    childItem.page === "THE FAMILY" ? (
                       <a
                         href={childItem.link}
                         target="_blank"

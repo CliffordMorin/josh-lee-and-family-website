@@ -11,7 +11,7 @@ import {
 import { SiBandsintown } from "react-icons/si";
 
 const API_KEY = process.env.REACT_APP_BANDSINTOWN_API_KEY;
-const ARTIST_ID = "15520741";
+const ARTIST_ID = "14237269";
 
 const EmptyCalendar = () => {
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));

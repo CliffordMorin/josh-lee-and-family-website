@@ -16,7 +16,7 @@ import {
 
 import { Bounce } from "react-awesome-reveal";
 import makeStyles from "./styles";
-import joan7 from "../../images/joan7.jpg";
+import bio from "../../images/bio.jpg";
 // import martin6small from "../../images/compressed/martin6small.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -35,12 +35,10 @@ const Bio = () => {
   return (
     <div>
       <Helmet>
-        <title>Joan Fort | Biography</title>
+        <title>Josh Lee and the Family | Biography</title>
         <meta
           name="description"
-          content="The Catalan saxophonist and composer Joan Fort is at the
-                forefront of his generation of jazz musicians. Residing in
-                Amsterdam he leads Joan Fort Quintet as well as many other groups."
+          content="Josh Lee and the Extended Family is a Philadelphia based ensemble that authentically celebrates the music and the dance of the swing era."
         />
         <link rel="canonical" href="/bio" />
       </Helmet>
@@ -80,7 +78,7 @@ const Bio = () => {
             <Grid item xs={12} md={6}>
               <LazyLoadImage
                 className={classes.images}
-                src={joan7}
+                src={bio}
                 effect="blur"
                 alt="martin"
               />

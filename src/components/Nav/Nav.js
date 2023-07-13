@@ -3,8 +3,9 @@ import React from "react";
 import NavTabsDesktop from "./NavTabsDesktop";
 import NavTabsMobile from "./NavTabsMobile";
 
-import { AppBar, Toolbar, Typography, Container } from "@mui/material";
+import { AppBar, Toolbar, Typography, Container, Box } from "@mui/material";
 import useTheme from "@mui/material/styles/useTheme";
+import Logo from "../../images/logo.svg";
 
 // import song from "../../audio/come-out.wav";
 import { Link } from "react-router-dom";
@@ -35,81 +36,66 @@ const Nav = () => {
     <AppBar color="primary" position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Link to="/" style={{ textDecoration: "none", color: "red" }}>
-            <Typography
-              variant="h1"
-              noWrap
-              component="div"
-              sx={{
-                mr: 2,
-                fontWeight: "bold",
-                display: { xs: "none", md: "flex" },
-              }}
-            >
-              <span
-                style={{ color: theme.palette.text.primary, fontSize: "3rem" }}
-              >
-                JOAN
-              </span>
-              <span
-                style={{
-                  color: theme.palette.secondary.main,
-                  fontSize: "3rem",
+          <Box sx={{ display: "flex", alignItems: "center", flexGrow: 1 }}>
+            <Link to="/" style={{ textDecoration: "none", color: "red" }}>
+              <Typography
+                variant="h1"
+                noWrap
+                component="div"
+                sx={{
+                  fontWeight: "bold",
+                  display: { xs: "none", md: "flex" },
                 }}
               >
-                FORT
-              </span>
-            </Typography>
-          </Link>
+                <img src={Logo} alt="logo" style={{ height: "6.5rem" }} />
+              </Typography>
+            </Link>
+            <Link
+              to="/"
+              style={{
+                textDecoration: "none",
+                color: "unset",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Typography
+                variant="h1"
+                noWrap
+                component="div"
+                sx={{
+                  textAlign: "center",
+                  fontWeight: "bold",
+                  display: { xs: "flex", md: "none" },
+                }}
+              >
+                <img
+                  src={Logo}
+                  alt="logo"
+                  style={{ height: "4.5rem", margin: "0 auto" }}
+                />
+              </Typography>
+            </Link>
+          </Box>
+
           <NavTabsMobile />
-          <Link
-            to="/"
-            style={{
-              textDecoration: "none",
-              color: "unset",
-            }}
-          >
-            <Typography
-              variant="h1"
-              noWrap
-              component="div"
-              sx={{
-                ml: 6,
-                fontWeight: "bold",
-                display: { xs: "flex", md: "none" },
-              }}
-            >
-              <span
-                style={{ color: theme.palette.text.primary, fontSize: "2rem" }}
-              >
-                JOAN
-              </span>
-              <span
-                style={{
-                  color: theme.palette.secondary.main,
-                  fontSize: "2rem",
-                }}
-              >
-                FORT
-              </span>
-            </Typography>
-          </Link>
 
           <NavTabsDesktop />
 
           {/* <IconButton
-            color="warning"
-            size="medium"
-            variant="contained"
-            aria-label="play/ pause"
-            onClick={(e) => playPause()}
-          >
-            {isPlaying ? (
-              <PauseCircle fontSize="large" />
-            ) : (
-              <PlayCircle fontSize="large" />
-            )}
-          </IconButton> */}
+        color="warning"
+        size="medium"
+        variant="contained"
+        aria-label="play/ pause"
+        onClick={(e) => playPause()}
+      >
+        {isPlaying ? (
+          <PauseCircle fontSize="large" />
+        ) : (
+          <PlayCircle fontSize="large" />
+        )}
+      </IconButton> */}
         </Toolbar>
       </Container>
     </AppBar>

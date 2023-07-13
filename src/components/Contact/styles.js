@@ -1,16 +1,16 @@
 import { makeStyles } from "@mui/styles";
-import joan6 from "../../images/joan6.jpg";
+import contactPage from "../../images/contactPage.jpg";
 
 export default makeStyles((theme) => ({
   container: {
-    backgroundImage: `url(${joan6})`,
+    backgroundImage: `url(${contactPage})`,
     backgroundPosition: "center",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     height: "100vh",
     paddingTop: theme.spacing(5),
     [theme.breakpoints.down("sm")]: {
-      backgroundImage: `url(${joan6})`,
+      backgroundImage: `url(${contactPage})`,
       backgroundPosition: "50%",
       paddingTop: theme.spacing(4),
     },
@@ -41,7 +41,7 @@ export default makeStyles((theme) => ({
     color: theme.palette.text.colorful,
     "& .MuiOutlinedInput-root": {
       "& fieldset": {
-        borderColor: theme.palette.text.light, // set border color for active state
+        borderColor: theme.palette.text.colorfulHover, // set border color for active state
       },
       "&:hover fieldset": {
         borderColor: theme.palette.text.colorful, // set border color for hover state
@@ -54,7 +54,7 @@ export default makeStyles((theme) => ({
       },
     },
     "& .MuiFormLabel-root": {
-      color: theme.palette.text.light, // set label color
+      color: theme.palette.text.colorfulHover, // set label color
     },
   },
 }));

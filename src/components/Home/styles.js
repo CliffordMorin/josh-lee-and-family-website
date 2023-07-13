@@ -1,9 +1,9 @@
 import { makeStyles } from "@mui/styles";
-import joan5 from "../../images/joan5.jpg";
+import home from "../../images/home.jpg";
 
 export default makeStyles((theme) => ({
   container: {
-    backgroundImage: `url(${joan5})`,
+    backgroundImage: `url(${home})`,
     backgroundPosition: "50% 10%",
     backgroundSize: "cover",
     backgroundRepeat: "repeat",

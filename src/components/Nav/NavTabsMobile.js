@@ -81,7 +81,7 @@ const NavTabsDesktop = () => {
         {navLinks.map((item) => {
           if (item.children) {
             return (
-              <div>
+              <div key={item.id}>
                 <Button
                   ref={item.page === "About" ? aboutRef : mediaRef}
                   sx={{
@@ -90,7 +90,6 @@ const NavTabsDesktop = () => {
                     display: "block",
                   }}
                   className={classes.ButtonMobile}
-                  key={item.id}
                   onClick={() => {
                     if (item.page === "About") {
                       handleAboutMenuOpen();
@@ -112,8 +111,8 @@ const NavTabsDesktop = () => {
                     anchorEl={aboutRef.current}
                     keepMounted
                     anchorOrigin={{
-                      vertical: "top",
-                      horizontal: "right",
+                      vertical: "bottom", // Update vertical origin to "bottom"
+                      horizontal: "left",
                     }}
                     transformOrigin={{
                       vertical: "top",
@@ -125,32 +124,61 @@ const NavTabsDesktop = () => {
                       handleMenuClose();
                     }}
                   >
-                    {item.children.map((childItem) => (
-                      <Link
-                        to={childItem.link}
-                        style={{
-                          textDecoration: "none",
-                          color: "unset",
-                          display: "block",
-                        }}
-                        key={childItem.id}
-                      >
-                        <MenuItem
-                          onClick={() => {
-                            handleAboutMenuClose();
-                            handleMenuClose();
+                    {item.children.map((childItem) =>
+                      childItem.page === "THE FAMILY" ? (
+                        <a
+                          href={childItem.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            textDecoration: "none",
+                            color: "unset",
+                            display: "block",
                           }}
+                          key={childItem.id}
                         >
-                          <childItem.icon className={classes.IconsMobile} />
-                          <Typography
-                            className={classes.navLinkTextMobile}
-                            variant="h1"
+                          <MenuItem
+                            onClick={handleAboutMenuClose}
+                            className={classes.navLinkTextDesktop}
                           >
-                            {childItem.page}
-                          </Typography>
-                        </MenuItem>
-                      </Link>
-                    ))}
+                            <childItem.icon
+                              className={classes.IconsDesktopDropdown}
+                            />
+                            <Typography
+                              className={classes.navLinkTextDropdownDesktop}
+                              variant="h1"
+                            >
+                              {childItem.page}
+                            </Typography>
+                          </MenuItem>
+                        </a>
+                      ) : (
+                        <Link
+                          to={childItem.link}
+                          style={{
+                            textDecoration: "none",
+                            color: "unset",
+                            display: "block",
+                          }}
+                          key={childItem.id}
+                        >
+                          <MenuItem
+                            onClick={() => {
+                              handleAboutMenuClose();
+                              handleMenuClose();
+                            }}
+                          >
+                            <childItem.icon className={classes.IconsMobile} />
+                            <Typography
+                              className={classes.navLinkTextMobile}
+                              variant="h1"
+                            >
+                              {childItem.page}
+                            </Typography>
+                          </MenuItem>
+                        </Link>
+                      )
+                    )}
                   </Menu>
                 )}
                 {item.page === "Media" && (
@@ -158,8 +186,8 @@ const NavTabsDesktop = () => {
                     anchorEl={mediaRef.current}
                     keepMounted
                     anchorOrigin={{
-                      vertical: "top",
-                      horizontal: "right",
+                      vertical: "bottom", // Update vertical origin to "bottom"
+                      horizontal: "left",
                     }}
                     transformOrigin={{
                       vertical: "top",

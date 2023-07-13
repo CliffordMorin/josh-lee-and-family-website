@@ -13,7 +13,7 @@ const Contact = () => {
   return (
     <div className={classes.wrapper}>
       <Helmet>
-        <title>Joan Fort | Contact</title>
+        <title>Josh Lee and the Family | Contact</title>
         <meta
           name="description"
           content="Contact form to get in contact with Joan Fort regarding any Inquiries."
@@ -41,7 +41,7 @@ const Contact = () => {
                 align="center"
                 className={classes.heading}
               >
-                CONTACT ME
+                CONTACT US
               </Typography>
             </Fade>
             <Divider
