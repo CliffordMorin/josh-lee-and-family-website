@@ -34,8 +34,8 @@ const Videos = () => {
   return (
     <Container>
       <Helmet>
-        <title>Joan Fort | Videos</title>
-        <meta name="description" content="Videos of Joan Fort" />
+        <title>Josh Lee and the Family | Videos</title>
+        <meta name="description" content="Videos of Josh lee and Family" />
         <link rel="canonical" href="/videos" />
       </Helmet>
       <Typography

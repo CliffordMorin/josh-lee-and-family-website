@@ -6,7 +6,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 import { Bounce } from "react-awesome-reveal";
 import makeStyles from "./styles";
-import joantrio1 from "../../images/joantrio1.jpg";
+// import joantrio1 from "../../images/joantrio1.jpg";
 import useTheme from "@mui/material/styles/useTheme";
 import { Helmet } from "react-helmet-async";
 
@@ -51,12 +51,12 @@ const Discography = () => {
             style={{ display: "flex", justifyContent: "center" }}
           >
             <Grid item xs={12} md={6}>
-              <LazyLoadImage
+              {/* <LazyLoadImage
                 className={classes.images}
                 src={joantrio1}
                 effect="blur"
                 alt="martin"
-              />
+              /> */}
             </Grid>
             <Grid item xs={12} md={6} sx={{ zIndex: 1 }}>
               <iframe

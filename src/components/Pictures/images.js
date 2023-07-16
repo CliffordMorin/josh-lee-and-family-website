@@ -1,89 +1,65 @@
-import joan1 from "../../images/joan1.jpg";
-import joan2 from "../../images/joan2.jpg";
-import joan3 from "../../images/joan3.jpg";
-import joan4 from "../../images/joan4.jpg";
-import joantrio from "../../images/joantrio.jpg";
-import joantrio1 from "../../images/joantrio1.jpg";
-import joantrio2 from "../../images/joantrio2.jpg";
-import joantrio3 from "../../images/joantrio3.jpg";
-import dam1 from "../../images/DamJawn/dam1.jpg";
-import dam2 from "../../images/DamJawn/dam2.jpg";
-import dam3 from "../../images/DamJawn/dam3.jpg";
-import JawnDickOatts from "../../images/DamJawn/JawnDickOatts.jpg";
-import dam5 from "../../images/DamJawn/dam5.jpg";
-import dam6 from "../../images/DamJawn/dam6.jpg";
-import dam7 from "../../images/DamJawn/dam7.jpg";
-import dam8 from "../../images/DamJawn/dam8.jpg";
-import dam9 from "../../images/DamJawn/dam9.jpg";
+import saxes2 from "../../images/saxes2.jpg";
+import trombones from "../../images/trombones.jpg";
+import trumpets from "../../images/trumpets.jpg";
+import chris from "../../images/chris.jpg";
+import josh from "../../images/josh.jpg";
+import pat from "../../images/pat.jpg";
+import dancers from "../../images/dancers.jpg";
+import singer from "../../images/singer.jpg";
+import guitar from "../../images/guitar.jpg";
+import saxes from "../../images/saxes.jpg";
+import dancers2 from "../../images/dancers2.jpg";
+import josh2 from "../../images/josh2.jpg";
 
 const images = [
   {
-    original: joan4,
-    thumbnail: joan4,
+    original: saxes2,
+    thumbnail: saxes2,
   },
   {
-    original: joantrio,
-    thumbnail: joantrio,
+    original: trombones,
+    thumbnail: trombones,
   },
   {
-    original: joantrio1,
-    thumbnail: joantrio1,
+    original: trumpets,
+    thumbnail: trumpets,
   },
   {
-    original: joantrio2,
-    thumbnail: joantrio2,
+    original: chris,
+    thumbnail: chris,
   },
   {
-    original: joan1,
-    thumbnail: joan1,
+    original: josh,
+    thumbnail: josh,
   },
   {
-    original: joan2,
-    thumbnail: joan2,
+    original: pat,
+    thumbnail: pat,
   },
   {
-    original: joan3,
-    thumbnail: joan3,
+    original: dancers,
+    thumbnail: dancers,
+  },
+
+  {
+    original: singer,
+    thumbnail: singer,
   },
   {
-    original: joantrio3,
-    thumbnail: joantrio3,
+    original: guitar,
+    thumbnail: guitar,
   },
   {
-    original: dam1,
-    thumbnail: dam1,
+    original: saxes,
+    thumbnail: saxes,
   },
   {
-    original: dam2,
-    thumbnail: dam2,
+    original: dancers2,
+    thumbnail: dancers2,
   },
   {
-    original: dam3,
-    thumbnail: dam3,
-  },
-  {
-    original: JawnDickOatts,
-    thumbnail: JawnDickOatts,
-  },
-  {
-    original: dam5,
-    thumbnail: dam5,
-  },
-  {
-    original: dam6,
-    thumbnail: dam6,
-  },
-  {
-    original: dam7,
-    thumbnail: dam7,
-  },
-  {
-    original: dam8,
-    thumbnail: dam8,
-  },
-  {
-    original: dam9,
-    thumbnail: dam9,
+    original: josh2,
+    thumbnail: josh2,
   },
 ];
 
