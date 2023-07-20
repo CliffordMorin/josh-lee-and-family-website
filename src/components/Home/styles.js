@@ -8,12 +8,14 @@ export default makeStyles((theme) => ({
     backgroundSize: "cover",
     backgroundRepeat: "repeat",
     height: "100vh",
+    position: "relative",
 
     [theme.breakpoints.down("sm")]: {
       backgroundPosition: "50%",
     },
   },
   logo: {
+    marginLeft: "0",
     width: "65%",
     [theme.breakpoints.down("sm")]: {
       width: "50%",
@@ -40,13 +42,11 @@ export default makeStyles((theme) => ({
     },
   },
   textContainer: {
-    paddingTop: "1%",
-    paddingLeft: "13%",
-    display: "flex",
-    textAlign: "center",
-    flexDirection: "column",
-    alignItems: "center",
-    width: "40%",
+    marginLeft: "0",
+    width: "55%",
+    position: "absolute",
+    top: "-50px",
+    left: "-40px",
     "& span": {
       fontSize: "3rem",
       fontWeight: "bold",
@@ -54,8 +54,8 @@ export default makeStyles((theme) => ({
     },
 
     [theme.breakpoints.down("sm")]: {
-      paddingTop: "7%",
-      paddingLeft: "30%",
+      top: "-10px",
+      left: "-20px",
       width: "100%",
       "& span": {
         fontSize: "2rem",

@@ -14,7 +14,7 @@ import { Fade } from "react-awesome-reveal";
 import makeStyles from "./styles";
 import { Helmet } from "react-helmet-async";
 // import { ReactComponent as LogoLarge } from "../../images/logoLarge.svg";
-import logo from "../../images/logo.svg";
+import homeLogo from "../../images/homeLogo.svg";
 
 const Home = () => {
   const theme = useTheme();
@@ -86,47 +86,14 @@ const Home = () => {
           out now! Click to listen!{" "}
         </Alert>
       </Snackbar> */}
-      {/* <Container
+      <Container
         className={classes.textContainer}
-        sx={{
-          [theme.breakpoints.down("sm")]: {
-            width: "60%",
-            pt: "20%",
-            ml: 3,
-            pl: 0,
-          },
-        }}
         maxWidth={isSmallScreen ? "sm" : "lg"}
       >
         <Fade delay="50">
-          <img src={logo} alt="logo" className={classes.logo} />
+          <img src={homeLogo} alt="logo" className={classes.logo} />
         </Fade>
-        <Fade delay="100">
-          <Typography
-            component="span"
-            variant="h1"
-            sx={{
-              display: "inline",
-              color: theme.palette.text.colorful,
-              [theme.breakpoints.down("sm")]: {
-                pb: 10,
-              },
-            }}
-          >
-            JOAN
-            <Typography
-              variant="h1"
-              component="span"
-              sx={{
-                display: "inline",
-                color: theme.palette.text.dark,
-              }}
-            >
-              FORT
-            </Typography>
-          </Typography>
-        </Fade> */}
-      {/* <Fade delay="100">
+        {/* <Fade delay="100">
           <Typography variant="h5" sx={{ color: theme.palette.text.light }}>
             Guitarist, Composer & Educator
           </Typography>
@@ -150,7 +117,7 @@ const Home = () => {
             Out Now!
           </Typography>
         </Fade> */}
-      {/* </Container> */}
+      </Container>
     </Container>
   );
 };
