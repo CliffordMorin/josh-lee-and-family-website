@@ -52,7 +52,7 @@ const Home = () => {
         <meta name="description" content="Home Page" />
         <link rel="canonical" href="/" />
       </Helmet>
-      {/* <Snackbar
+      <Snackbar
         open={open}
         onClose={handleClose}
         TransitionComponent={TransitionDown}
@@ -74,18 +74,16 @@ const Home = () => {
             </>
           }
         >
-          New album{" "}
           <a
-            href="https://orcd.co/avvade9"
+            href="https://www.gofundme.com/f/introducing-the-extended-family-support-our-debut-album"
             className={classes.link}
             target="_blank"
             rel="noreferrer"
           >
-            "MASTER ST" by The Dam Jawn ft Dick Oatts
+            Click Me To Support Our Debut Album!{" "}
           </a>{" "}
-          out now! Click to listen!{" "}
         </Alert>
-      </Snackbar> */}
+      </Snackbar>
       <Container
         className={classes.textContainer}
         maxWidth={isSmallScreen ? "sm" : "lg"}
