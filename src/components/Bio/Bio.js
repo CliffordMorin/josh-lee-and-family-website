@@ -24,7 +24,7 @@ const Bio = () => {
   const classes = makeStyles();
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
-  const [language, setLanguage] = useState("en");
+  const [language] = useState("en");
 
   return (
     <div>

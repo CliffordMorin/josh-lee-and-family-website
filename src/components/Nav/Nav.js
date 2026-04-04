@@ -4,7 +4,7 @@ import NavTabsDesktop from "./NavTabsDesktop";
 import NavTabsMobile from "./NavTabsMobile";
 
 import { AppBar, Toolbar, Typography, Container, Box } from "@mui/material";
-import useTheme from "@mui/material/styles/useTheme";
+// import useTheme from "@mui/material/styles/useTheme";
 import Logo from "../../images/logo.svg";
 
 // import song from "../../audio/come-out.wav";
@@ -20,7 +20,7 @@ const Nav = () => {
   // const audio = new Audio(song);
   // const audioRef = useRef(audio);
 
-  const theme = useTheme();
+  // const theme = useTheme();
 
   // const playPause = (e) => {
   //   if (isPlaying) {
