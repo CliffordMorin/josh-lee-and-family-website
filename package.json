@@ -2,6 +2,9 @@
   "name": "Josh Lee and the family",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@emotion/react": "^11.10.6",
