@@ -6,7 +6,6 @@ import {
   Alert,
   IconButton,
   Slide,
-  Typography,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import useTheme from "@mui/material/styles/useTheme";

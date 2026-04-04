@@ -1,10 +1,10 @@
-import { FaHome, FaInfoCircle, FaVideo } from "react-icons/fa";
+import { FaHome, FaInfoCircle } from "react-icons/fa";
 import { TfiWrite } from "react-icons/tfi";
-import { TbVinyl } from "react-icons/tb";
+
 import { BsFillCameraFill, BsCalendarEventFill } from "react-icons/bs";
 import { AiFillPicture, AiFillMail } from "react-icons/ai";
 import { HiUserGroup } from "react-icons/hi";
-import { GrDocumentDownload } from "react-icons/gr";
+
 import { ImHeadphones } from "react-icons/im";
 import { v4 as uuidv4 } from "uuid";
 

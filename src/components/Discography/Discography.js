@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Container, Grow, Typography, Grid, Divider } from "@mui/material";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 import { Bounce } from "react-awesome-reveal";
@@ -11,7 +11,6 @@ import useTheme from "@mui/material/styles/useTheme";
 import { Helmet } from "react-helmet-async";
 
 const Discography = () => {
-  const classes = makeStyles();
   const theme = useTheme();
   return (
     <div>

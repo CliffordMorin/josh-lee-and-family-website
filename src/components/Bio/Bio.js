@@ -10,8 +10,6 @@ import {
   Grid,
   useMediaQuery,
   Divider,
-  Button,
-  Box,
 } from "@mui/material";
 
 import { Bounce } from "react-awesome-reveal";
@@ -27,10 +25,6 @@ const Bio = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   const [language, setLanguage] = useState("en");
-
-  const handleLanguage = (e) => {
-    setLanguage(e.target.value);
-  };
 
   return (
     <div>
