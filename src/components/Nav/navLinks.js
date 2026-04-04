@@ -43,8 +43,8 @@ const navLinksDesktop = [
         icon: AiFillPicture,
       },
       {
-        page: "RECORDINGS",
-        link: "https://drive.google.com/drive/folders/19uEMozTc4QDnKB9N3b7fM50tOVZCFBqF",
+        page: "LISTEN",
+        link: "https://youtube.com/@joshleeandthefamily?si=ARzz2189EDa_a3Vf",
         id: uuidv4(),
         icon: ImHeadphones,
       },

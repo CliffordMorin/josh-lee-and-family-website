@@ -43,7 +43,10 @@ const Bio = () => {
         <link rel="canonical" href="/bio" />
       </Helmet>
       <Grow in>
-        <Container maxWidth="xl" sx={{ backgroundColor: "#040404", pb: 7 }}>
+        <Container
+          maxWidth="xl"
+          sx={{ backgroundColor: theme.palette.background.default, pb: 7 }}
+        >
           <Typography
             variant="h2"
             align="center"
@@ -55,8 +58,8 @@ const Bio = () => {
               {language === "en"
                 ? en?.title?.toUpperCase()
                 : language === "ca"
-                ? ca?.title?.toUpperCase()
-                : es?.title?.toUpperCase()}
+                  ? ca?.title?.toUpperCase()
+                  : es?.title?.toUpperCase()}
             </Bounce>
           </Typography>
           <Divider
@@ -117,8 +120,8 @@ const Bio = () => {
                 {language === "en"
                   ? en?.bio1
                   : language === "ca"
-                  ? ca?.bio1
-                  : es?.bio1}
+                    ? ca?.bio1
+                    : es?.bio1}
               </Typography>
               <Typography
                 variant="body2"
@@ -129,8 +132,8 @@ const Bio = () => {
                 {language === "en"
                   ? en?.bio2
                   : language === "ca"
-                  ? ca?.bio2
-                  : es?.bio2}
+                    ? ca?.bio2
+                    : es?.bio2}
               </Typography>
               <Typography
                 variant="body2"
@@ -141,8 +144,8 @@ const Bio = () => {
                 {language === "en"
                   ? en?.bio3
                   : language === "ca"
-                  ? ca?.bio3
-                  : es?.bio3}
+                    ? ca?.bio3
+                    : es?.bio3}
               </Typography>
             </Grid>
           </Grid>

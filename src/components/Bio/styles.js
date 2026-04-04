@@ -15,11 +15,12 @@ export default makeStyles((theme) => ({
     },
   },
   text: {
-    color: theme.palette.text.light,
+    color: theme.palette.primary.main,
     textAlign: "justify",
     textJustify: "inter-word",
     padding: "10px 40px",
     fontSize: "1.2rem",
+    fontWeight: "bold",
     [theme.breakpoints.down("sm")]: {
       padding: "10px 10px",
       fontSize: "1rem",
@@ -31,7 +32,7 @@ export default makeStyles((theme) => ({
     backgroundColor: theme.palette.primary.main,
     "&:hover": {
       backgroundColor: theme.palette.secondary.main,
-      color: "#000",
+      color: "#D6E4F7",
     },
   },
 }));
