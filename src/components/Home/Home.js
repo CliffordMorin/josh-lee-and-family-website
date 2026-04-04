@@ -15,12 +15,15 @@ import makeStyles from "./styles";
 import { Helmet } from "react-helmet-async";
 // import { ReactComponent as LogoLarge } from "../../images/logoLarge.svg";
 import homeLogo from "../../images/homeLogo.svg";
+import poster from "../../images/spring25.png";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   const classes = makeStyles();
   const [open, setOpen] = useState(true);
+  const navigate = useNavigate();
 
   const TransitionDown = (props) => {
     return <Slide {...props} direction="down" />;
@@ -59,29 +62,35 @@ const Home = () => {
       >
         <Alert
           elevation={6}
-          variant="filled"
-          severity="info"
+          variant="standard"
+          icon={false}
+          sx={{
+            backgroundColor: "rgba(0,0,0,0.8)",
+            color: "white",
+            cursor: "pointer",
+          }}
+          onClick={() => navigate("/calendar")}
           action={
             <>
               <IconButton
                 size="small"
                 aria-label="close"
                 color="inherit"
-                onClick={handleClose}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleClose();
+                }}
               >
                 <CloseIcon fontSize="small" />
               </IconButton>
             </>
           }
         >
-          <a
-            href="https://www.gofundme.com/f/introducing-the-extended-family-support-our-debut-album"
-            className={classes.link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Click Me To Support Our Debut Album!{" "}
-          </a>{" "}
+          <img
+            src={poster}
+            alt="Upcoming Shows"
+            style={{ width: "100%", maxHeight: "400px", objectFit: "cover" }}
+          />
         </Alert>
       </Snackbar>
       <Container
