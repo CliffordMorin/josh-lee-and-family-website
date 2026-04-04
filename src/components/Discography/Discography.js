@@ -5,8 +5,6 @@ import { Container, Grow, Typography, Grid, Divider } from "@mui/material";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 import { Bounce } from "react-awesome-reveal";
-import makeStyles from "./styles";
-// import joantrio1 from "../../images/joantrio1.jpg";
 import useTheme from "@mui/material/styles/useTheme";
 import { Helmet } from "react-helmet-async";
 
