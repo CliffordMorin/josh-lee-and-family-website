@@ -14,7 +14,7 @@ import makeStyles from "./styles";
 import { Helmet } from "react-helmet-async";
 // import { ReactComponent as LogoLarge } from "../../images/logoLarge.svg";
 import homeLogo from "../../images/homeLogo.svg";
-import poster from "../../images/spring25.png";
+import poster from "../../images/spring26.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
