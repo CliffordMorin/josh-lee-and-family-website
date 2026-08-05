@@ -54,44 +54,47 @@ const Home = () => {
         <meta name="description" content="Home Page" />
         <link rel="canonical" href="/" />
       </Helmet>
-      <Snackbar
-        open={open}
-        onClose={handleClose}
-        TransitionComponent={TransitionDown}
-      >
-        <Alert
-          elevation={6}
-          variant="standard"
-          icon={false}
-          sx={{
-            backgroundColor: "rgba(0,0,0,0.8)",
-            color: "white",
-            cursor: "pointer",
-          }}
-          onClick={() => navigate("/calendar")}
-          action={
-            <>
-              <IconButton
-                size="small"
-                aria-label="close"
-                color="inherit"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  handleClose();
-                }}
-              >
-                <CloseIcon fontSize="small" />
-              </IconButton>
-            </>
-          }
+      {/* TODO: Popup disabled for now — keep code commented for later reuse */}
+      {false && (
+        <Snackbar
+          open={open}
+          onClose={handleClose}
+          TransitionComponent={TransitionDown}
         >
-          <img
-            src={poster}
-            alt="Upcoming Shows"
-            style={{ width: "100%", maxHeight: "400px", objectFit: "cover" }}
-          />
-        </Alert>
-      </Snackbar>
+          <Alert
+            elevation={6}
+            variant="standard"
+            icon={false}
+            sx={{
+              backgroundColor: "rgba(0,0,0,0.8)",
+              color: "white",
+              cursor: "pointer",
+            }}
+            onClick={() => navigate("/calendar")}
+            action={
+              <>
+                <IconButton
+                  size="small"
+                  aria-label="close"
+                  color="inherit"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleClose();
+                  }}
+                >
+                  <CloseIcon fontSize="small" />
+                </IconButton>
+              </>
+            }
+          >
+            <img
+              src={poster}
+              alt="Upcoming Shows"
+              style={{ width: "100%", maxHeight: "400px", objectFit: "cover" }}
+            />
+          </Alert>
+        </Snackbar>
+      )}
       <Container
         className={classes.textContainer}
         maxWidth={isSmallScreen ? "sm" : "lg"}
